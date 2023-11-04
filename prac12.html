@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Units Summary</title>
+
+    <!-- Include Bootstrap CSS and JS (you may need to adjust the paths) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="courseTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="unit1-tab" data-toggle="tab" href="#unit1" role="tab" aria-controls="unit1" aria-selected="true">Unit 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="unit2-tab" data-toggle="tab" href="#unit2" role="tab" aria-controls="unit2" aria-selected="false">Unit 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="unit3-tab" data-toggle="tab" href="#unit3" role="tab" aria-controls="unit3" aria-selected="false">Unit 3</a>
+            </li>
+            <!-- Add more tabs as needed -->
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content" id="courseTabContent">
+            <div class="tab-pane fade show active" id="unit1" role="tabpanel" aria-labelledby="unit1-tab">
+                <h2>Unit 1: Introduction</h2>
+                <p>Course content for Unit 1 goes here.</p>
+            </div>
+            <div class="tab-pane fade" id="unit2" role="tabpanel" aria-labelledby="unit2-tab">
+                <h2>Unit 2: Main Topics</h2>
+                <p>Course content for Unit 2 goes here.</p>
+            </div>
+            <div class="tab-pane fade" id="unit3" role="tabpanel" aria-labelledby="unit3-tab">
+                <h2>Unit 3: Conclusion</h2>
+                <p>Course content for Unit 3 goes here.</p>
+            </div>
+            <!-- Add more tab content sections as needed -->
+        </div>
+    </div>
+</body>
+</html>

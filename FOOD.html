@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery App</title>
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="fda_app" class="row">
+      
+      <section id="fda_side_bar">
+        <div class="menu_icon"></div>
+        <div class="menu">
+          <ul>
+            <a href="C.html" target="_blank">Chinese</a>
+            <a href="A.html" target="_blank">American</a>
+            <a href="I.html" target="_blank">Indian</a>
+          </ul>
+        </div>
+        <div class="menu_filter"></div>
+      </section>
+
+      <section id="fda_header_bar" class="col-12">
+        <div class="row">
+          <div class="col-12">
+            <span>Order</span>&nbsp;Fresh Food
+          </div>
+        </div>
+        <div class="row fda_search_row">
+          <div class="col-12">
+            <input type="text" class="fda_ip_search" placeholder="Search by food/restaurant">
+          </div>
+        </div>
+      </section>
+      
+      <section id="fda_product_tile" class="col-12">
+        <div class="row fda_food_row">
+          <div class="col-9">
+            <div class="food_tile" id="Cake">
+              <img src="broweni.jpg" alt="Brownie"> <span class="food_name">Brownie</span> <span class="food_detail"></span>
+              <ul id="food_meta">
+                <li>Calorie <span>325 CAL</span></li>
+                <li>Price <span>550</span></li>
+              </ul><button type="button" class="btn btn-sm btn-default">Order Now</button>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="food_tile">
+              <img src="cake.jpg" alt="Cake"> <span class="food_name">Cake</span> <span class="food_detail"></span>
+              <ul id="food_meta">
+                <li>Calorie <span>600 CAL</span></li>
+                <li>Price <span>350</span></li>
+              </ul><button type="button" class="btn btn-sm btn-default">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fda_section_product_tile col-12">
+        <div class="row fda_title_row">
+          <div class="col-12">
+            Popular this week
+          </div>
+        </div>
+        <div class="row fda_section_row">
+          <div class="section_product_tile row col-10">
+            <div class="col-4 justify-content-center align-self-center"><img src="pavbhaji.jpg" alt="Pav-bhaji"></div>
+            <div class="col-6 justify-content-center align-self-center section_meta">
+              <span class="product_title">Pav-bhaji</span> <span class="product_rating"><span class="rating_avg">(4.5)</span></span> <span class="product_price">250.00</span>
+            </div>
+          </div>
+          <div class="section_product_tile row col-10">
+            <div class="col-4 justify-content-center align-self-center"><img src="mock.jpg" alt="Mocktailas"></div>
+            <div class="col-6 justify-content-center align-self-center section_meta">
+              <span class="product_title">Mocktailas</span> <span class="product_rating"><span class="rating_avg">(4.0)</span></span> <span class="product_price">450.00</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fda_section_product_tile col-12">
+        <div class="row fda_title_row">
+          <div class="col-12">
+            New Arrivals
+          </div>
+        </div>
+        <div class="row fda_section_row">
+          <div class="section_product_tile row col-10">
+            <div class="col-4 justify-content-center align-self-center"><img src="momes.jpg" alt="Momes"></div>
+            <div class="col-6 justify-content-center align-self-center section_meta">
+              <span class="product_title">Momes</span> <span class="product_rating"><span class="rating_avg">(5.0)</span></span> <span class="product_price">20.00</span>
+            </div>
+          </div>
+          <div class="section_product_tile row col-10">
+            <div class="col-4 justify-content-center align-self-center"><img src="donates.jpg" alt="Donates"></div>
+            <div class="col-6 justify-content-center align-self-center section_meta">
+              <span class="product_title">Donates</span> <span class="product_rating"><span class="rating_avg">(3.5)</span></span> <span class="product_price">650</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>

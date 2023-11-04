@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Page Transitions</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+	.page {
+    		display: none;
+    		transition: opacity 0.5s;
+         }
+
+	.page.active {
+    		display: block;
+    		opacity: 1;
+	}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Website</a>
+    </nav>
+    <div id="page-container">
+        <div class="page" id="home-page">
+            <h1>Welcome to the Home Page</h1>
+            <a class="btn btn-primary" href="about.html">Go to About</a>
+            <a class="btn btn-primary" href="contact.html">Go to Contact</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+	document.addEventListener("DOMContentLoaded", function () {
+    var currentPage = null;
+
+    function showPage(pageId) {
+        if (currentPage) {
+            currentPage.classList.remove("active");
+        }
+
+        var newPage = document.getElementById(pageId);
+        newPage.classList.add("active");
+        currentPage = newPage;
+    }
+
+    showPage("home-page");
+
+    var links = document.querySelectorAll("a");
+    links.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            var href = this.getAttribute("href").substring(1); // Remove #
+            showPage(href);
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

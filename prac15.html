@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Progress Bars</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Creating Progress Bars</h2>
+        <div class="progress">
+            <div class="progress-bar" style="width: 25%;">25%</div>
+        </div><br>
+
+	<div class="progress">
+            <div class="progress-bar" style="width: 50%;">50%</div>
+        </div><br>
+
+	<div class="progress">
+    	   <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 25%;">25%</div>
+    	   <div class="progress-bar progress-bar-striped bg-warning" style="width: 30%;">30%</div>
+    	   <div class="progress-bar progress-bar-striped bg-danger" style="width: 45%;">45%</div>
+        </div><br>
+
+	<h2>Changing Value of Progress Bar Dynamically</h2>
+            <div class="progress">
+                <div id="dynamic-progress" class="progress-bar" style="width: 50%;">50%</div>
+            </div><br>
+        <button onclick="setProgress(40)" class="btn btn-primary">Set Progress to 40%</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function setProgress(value) {
+            var progressBar = document.getElementById("dynamic-progress");
+            progressBar.style.width = value + "%";
+            progressBar.innerText = value + "%";
+        }
+    </script>
+</body>
+</html>

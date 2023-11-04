@@ -1,0 +1,22 @@
+<section id="fda_product_tile" class="col-12">
+        <div class="row fda_food_row">
+          <div class="col-9">
+            <div class="food_tile active">
+              <img src="imgs/food/tsr.png" alt="tsr" class="fda_product_img"> <span class="food_name">Schezwan Rice</span> <span class="food_detail">Triple schezuan rice, combines hakka noodles, fried rice, crisp noodles and ..</span>
+              <ul id="food_meta">
+                <li>Calorie <span>325 CAL</span></li>
+                <li>Price <span>550</span></li>
+              </ul><button type="button" class="btn btn-sm btn-default">Order Now</button>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="food_tile">
+              <img src="imgs/food/pav-bhaji.png" alt="pav-bhaji" class="fda_product_img"> <span class="food_name">Pav Bhaji Butter</span> <span class="food_detail">Pav bhaji is a fast food dish from India, consisting of a thick vegetable curry ..</span>
+              <ul id="food_meta">
+                <li>Calorie <span>600 CAL</span></li>
+                <li>Price <span>350</span></li>
+              </ul><button type="button" class="btn btn-sm btn-default">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </section>

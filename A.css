@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(0,123,255,.5);
+    width: px;
+    height: px;
+}
+
+.food_tile{
+    float: left;
+    width: px;
+    display: inline;
+
+}
+
+.image-container {
+    width: 190px; 
+    background-color: rgba(0,123,255,.5);
+    padding: 10px; 
+    justify-content: space-between;
+    display: flexbox;
+}
+
+.image-container img {
+    width: 90%; 
+    height: auto; 
+    margin: 5px;
+    display: flex; 
+}
+
